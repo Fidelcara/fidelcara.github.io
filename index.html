@@ -1,78 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Mi Nombre</h1>
+
+            <h1 id="name">Fidel Hernández</h1>
             <nav>
-                <ul>
-                    <li><a href="#about">Acerca de mí</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
+                    <a href="#about">Acerca de mí</a>
+                    <a href="#experience">Experiencia Laboral</a>
+                    <a href="#skills">Habilidades</a>
+                    <a href="#metacognition">Reflexiones</a>
+                    <a href="#projects">Proyectos</a>
+                    <a href="#contact">Contacto</a>
+
             </nav>
-        </div>
+
     </header>
     <main>
         <section id="about">
-            <div class="container">
-                <h2><i class='fab fa-accessible-icon' style='font-size:36px'></i>Acerca de mí</h2>
-                <p>Bienvenido a mi portfolio. Soy un desarrollador web con pasión por crear experiencias digitales. Aquí encontrarás más sobre mí.</p>
+            <h1>
+                Acerca de mí
+            </h1>
+            <div id="bio">
+                <img src="/images/foto_perfil.jpeg" alt="Fidel Hernández" id="foto_perfil" width="500px" height="500px">
+                <p>
+                    Biólogo con experiencia en programación aplicada a la investigación y al análisis de datos.
+                    <br><br>
+                    Busco integrar mis conocimientos tanto en el ámbito de la biología como de la informática para poder 
+                    aportar una visión interdisciplinar y afrontar los retos que se plantean en la 
+                    investigación científica.
+                </p>
             </div>
         </section>
-    
+        <section id="experience">
+            <h1>
+                Experiencia Laboral
+            </h1>
+        </section>
         <section id="skills">
-            <div class="container">
-                <h2>Habilidades</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                </ul>
+            <h1>
+                HABILIDADES
+            </h1>
+            <div>
+                <h2>Lenguajes de programación</h2>
+                <div>
+                    <h3>
+                        Backend
+                    </h3>
+                    <div>
+                        <div id="python_section" class="backend_language">
+                            <div class="logo">
+                                <img src="/images/Python-image.png" alt="Python" height="150px">
+                                <p><a href="https://es.m.wikipedia.org/wiki/Archivo:Python-logo-notext.svg" target="_blank" class="fuente_imagen">Fuente</a></p>
+                            </div>
+                            <div class="language_description">
+                                <h4>Python</h4>
+                                <ul>
+                                    <li><strong>Análisis de datos:</strong><br>Durante mi trayectoria laboral he tenido la posibilidad de trabajar y analizar con gran cantidad de datos en diferentes formatos:
+                                        <ul>
+                                            <li>Numéricos</li>
+                                            <li>Lenguaje Natural</li>
+                                            <li>Booleanos</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Modelos predictivos mediante Machine Learning
+                                    </li>
+                                    <li>
+                                        Dominio de librerias como:
+                                        <ul>
+                                            <li><strong>NumPy</strong></li>
+                                            <li><strong>Pandas</strong></li>
+                                            <li><strong>Matplotlib</strong></li>
+                                            <li><strong>TensorFlow</strong> + <strong>Keras</strong></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div id="csharp_section" class="backend_language">
+                            <div class="logo">
+                                <img src="/images/csharp-image.png" alt="Python" height="100px">
+                                <p><a href="https://itsoftware.com.co/content/lenguaje-programacion-csharp/" target="_blank" class="fuente_imagen">Fuente</a></p>
+                            </div>
+                            <div class="language_description">
+                                <h4>C#</h4>
+                                <ul>
+                                    <li>Desarrollo de <strong>cuadros de mando</strong><br>Durante mi trayectoria laboral he tenido la posibilidad de trabajar y analizar con gran cantidad de datos en diferentes formatos:
+                                        
+                                    </li>
+                                    <li>
+                                        Desarrollo de <strong>APIs</strong> para la gestión de datos y explotación de datos
+                                    </li>
+                                    <li>
+                                       Desarrollo de proyectos <strong>Modelo Vista-Controlador (MVC) con .NET</strong>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>
+                        Frontend
+                    </h3>
+                </div>
+            </div>
+            <div>
+                <h2>
+                    Científicas
+                </h2>
+            </div>
+            <div>
+                <h2>
+                    Softskills
+                </h2>
             </div>
         </section>
-    
+        <section id="metacognition">
+            <h1>
+                Reflexiones
+            </h1>
+        </section>
         <section id="projects">
-            <div class="container">
-                <h2>Mis Proyectos</h2>
-                <div class="project">
-                    <h3>Proyecto 1</h3>
-                    <p>Descripción breve del proyecto 1.</p>
-                </div>
-                <div class="project">
-                    <h3>Proyecto 2</h3>
-                    <p>Descripción breve del proyecto 2.</p>
-                </div>
-            </div>
-        </section>
-    
-        <section id="contact">
-            <div class="container">
-                <h2>Contacto</h2>
-                <p>¿Te gustaría trabajar conmigo? Envíame un mensaje:</p>
-                <form>
-                    <input type="text" placeholder="Tu nombre" required>
-                    <input type="email" placeholder="Tu email" required>
-                    <textarea placeholder="Tu mensaje" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
+            <h1>
+                Proyectos
+            </h1>
         </section>
     </main>
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Mi Nombre. Todos los derechos reservados.</p>
-        </div>
+        <section id="contact">
+            <h1>Contactos</h1>
+            <p>Lista de enlaces personales</p>
+        </section>
     </footer>
 </body>
 </html>
