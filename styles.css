@@ -165,7 +165,6 @@ main h4 {
     /* color: #333; */
     text-align: center;
     margin-bottom: 1rem;
-    text-shadow: 4px 2px 2px rgba(0,0,0,0.6);
 }
 
 /* #endregion */
@@ -216,8 +215,65 @@ img#foto_perfil {
     align-items: start;
     justify-content: start;
     width: 70%;
+    text-align: justify;
+}
+
+/* #region softskills*/
+div#cards_softskills {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 5px;
+    /* flex-wrap: wrap; */
+}
+div#cards_softskills .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* height: 100px; */
+    width: 18rem;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    transition: 400ms;
+}
+.card h4 {
+    text-align: center;
+}
+.card p {
+    text-align: justify;
+    max-width: 17rem;
+    font-size: 1.1rem;
+}
+div#cards_softskills .card:hover {
+    transform: scale(1.1, 1.1);
+}
+div#cards_softskills:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}
+#communication_card{
+    background-color: #77dd77;
+}
+#teamwork_card{
+    background-color: #ffda9e;
+}
+#solver_card{
+    background-color: #fdfd96;
+}
+#adapt_card{
+    background-color: #ff6961;
+}
+#autonomy_card{
+    background-color: #84b6f4;
 }
 /* #endregion */
+
+/* #endregion */
+
+
 
 /* #region footer*/
 footer {
