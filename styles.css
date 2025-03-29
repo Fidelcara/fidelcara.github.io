@@ -194,6 +194,106 @@ img#foto_perfil {
 /* #endregion */
 /* #endregion */
 
+/* #region experience */
+#experience {
+    min-height: 25rem;
+    margin-bottom: 2rem;
+}
+#jobs_space {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: start;
+    gap: 5%;
+    flex-wrap: wrap;
+    padding: 0% 5%;
+}
+.job_book {
+    position: relative;
+    border-radius: 10px;
+    width: 18rem;
+    height: 22rem;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+    margin-bottom: 2rem;
+}
+  
+.cover {
+    top: 0;
+    position: absolute;
+    background-color: lightgray;
+    width: 18rem;
+    height: 22rem;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    /* align-items: center; */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+}
+.job_book h4, .cover h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #d64242;
+}
+.job_book p, .cover div p {
+    text-align: justify;
+    max-width: 15rem;
+}
+.job_book p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+    padding: 0% 5%;
+}
+.cover div p {
+    padding-left: 10px;
+}
+  
+.job_book:hover .cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-80deg);
+    -ms-transform: rotatey(-80deg);
+    transform: rotatey(-80deg);
+}
+  
+/* .job_book {
+    font-size: 20px;
+    font-weight: bolder;
+  } */
+/* #endregion */
+
 /* #region skills*/
 .backend_language, .frontend_language{
     display: flex;
@@ -249,6 +349,7 @@ div#cards_softskills .card {
 }
 div#cards_softskills .card:hover {
     transform: scale(1.1, 1.1);
+    cursor: zoom-in;
 }
 div#cards_softskills:hover > .card:not(:hover) {
     filter: blur(10px);
