@@ -172,7 +172,6 @@ main h4 {
 img#foto_perfil {
     width: 300px;
     height: 290px;
-    
     border-radius: 50%;
     margin: 0% 5%;
     border: 5px solid black;
@@ -181,14 +180,25 @@ img#foto_perfil {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: center;
+    gap: 10%;
 }
 #about div#bio p {
-    max-width: 50%;
+    max-width: 40rem;
     font-size: 1.2rem;
     text-align: justify;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 3px;
+}
+#about div#bio p:hover {
+    box-shadow: 0 4px 10px #e2504c;
+    transition: all 0.3s ease-in-out;
+}
+#about div#bio h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
 }
 
 /* #endregion */
@@ -394,8 +404,8 @@ img#foto_perfil {
     text-align: justify;
 }
 
-/* #region softskills*/
-div#cards_softskills {
+/* #region softskills and scientific*/
+div#cards_softskills, #cards_scientific_skills {
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -403,7 +413,7 @@ div#cards_softskills {
     gap: 5px;
     flex-wrap: wrap;
 }
-div#cards_softskills .card {
+div#cards_softskills .card, #cards_scientific_skills .card {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -423,7 +433,7 @@ div#cards_softskills .card {
     max-width: 16rem;
     font-size: 1.1rem;
 }
-div#cards_softskills .card:hover {
+div#cards_softskills .card:hover, #cards_scientific_skills .card:hover {
     transform: scale(1.1, 1.1);
     cursor: zoom-in;
 }
@@ -431,6 +441,15 @@ div#cards_softskills:hover > .card:not(:hover) {
     filter: blur(10px);
     transform: scale(0.9, 0.9);
 }
+div#cards_scientific_skills:hover > .card:not(:hover) {
+    filter: blur(2px);
+    transform: scale(0.9, 0.9);
+}
+
+div#cards_scientific_skills .card {
+    background-color: #96c4c4;
+}
+
 #communication_card{
     background-color: #77dd77;
 }
@@ -458,7 +477,7 @@ div#cards_softskills:hover > .card:not(:hover) {
     align-items: center;
     margin: 5px;
   }
-  
+/* #region waves */
   .wave {
     width: 1.8rem;
     height: 150px;
@@ -527,29 +546,58 @@ div#cards_softskills:hover > .card:not(:hover) {
   .wave:nth-child(10) {
     animation-delay: 0.9s;
   }
-
-  
 /* #endregion */
-/* #endregion */
-
-#loading_text {
+  #loading_text {
     font-size: 1.5rem;
     font-weight: 700;
     color: #c50000;
     text-align: center;
     margin-top: 2rem;
 }
+  
+/* #endregion */
+/* #endregion */
+
 /* #endregion */
 
 /* #region footer*/
 footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     background-color: #3d6064;
     color: white;
     width: 100vw;
     padding: 0% 5% 2% 5%;
+}
+footer h1 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0% 1rem 0%;
+}
+footer section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5%;
+    margin-bottom: 2rem;
+}
+footer section p {
+    font-size: 1.3rem;
+}
+footer img{
+    max-width: 2rem;
+}
+div.contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+div.contacto a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.3s;
 }
 /* #endregion */
