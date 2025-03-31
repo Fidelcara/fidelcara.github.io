@@ -10,7 +10,6 @@ body {
 * {
     box-sizing: border-box;
 }
-
 a.fuente_imagen {
     font-size: smaller;
     color: blue;
@@ -203,7 +202,7 @@ img#foto_perfil {
     display: flex;
     flex-direction: row;
     /* align-items: center; */
-    justify-content: start;
+    justify-content: center;
     gap: 5%;
     flex-wrap: wrap;
     padding: 0% 5%;
@@ -260,6 +259,13 @@ img#foto_perfil {
     -ms-flex-pack: center;
     justify-content: space-between;
 }
+.cover img {
+    max-width: 12rem;
+    max-height: 10rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
 .job_book h4, .cover h4 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -294,6 +300,75 @@ img#foto_perfil {
   } */
 /* #endregion */
 
+/* #region metacognition */
+#dafo {
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    text-align: center;
+    font-weight: bold;
+    gap: 0.5rem;
+    min-height: 20rem;
+    max-width: 85rem;
+    min-width: 80rem;
+    /* width: 80rem; */
+    margin: auto;
+  }
+
+#dafo .header {
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label-vertical {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+#dafo .dafo-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#dafo div .title {
+    font-size: 1.2rem;
+}
+#dafo div .description {
+    font-size: 1rem;
+    text-align: justify;
+    max-width: 80%;
+    padding: 0 0 1rem 5rem;
+}
+
+#debilidades {
+    background-color: #ffe680;
+    color: #a67c00;
+
+}
+
+#amenazas {
+    background-color: #ff8080;
+    color: #cc0000;
+}
+
+#fortalezas {
+    background-color: #99e699;
+    color: #339933;
+}
+
+#oportunidades {
+    background-color: #b3e0ff;
+    color: #3399cc;
+}
+/* #endregion */
+
 /* #region skills*/
 .backend_language, .frontend_language{
     display: flex;
@@ -304,6 +379,7 @@ img#foto_perfil {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     padding: 1rem;
     margin-bottom: 2rem;
+    border-radius: 20px;
 }
 .backend_language img, .frontend_language img{
     width: 150px;
@@ -323,9 +399,9 @@ div#cards_softskills {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 5px;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 div#cards_softskills .card {
     display: flex;
@@ -344,7 +420,7 @@ div#cards_softskills .card {
 }
 .card p {
     text-align: justify;
-    max-width: 17rem;
+    max-width: 16rem;
     font-size: 1.1rem;
 }
 div#cards_softskills .card:hover {
